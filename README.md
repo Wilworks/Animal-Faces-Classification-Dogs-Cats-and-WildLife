@@ -74,6 +74,8 @@ After training, the notebook generates plots for:
 - Training and validation loss over epochs
 - Training and validation accuracy over epochs
 
+**Note:** If validation accuracy appears >100% in the output, this is due to a calculation bug where percentages are applied twice. The actual accuracy is the displayed value divided by 100 (e.g., 192.23% = 92.23%). To fix, remove the `* 100` from the validation accuracy calculation in the training loop.
+
 ## License
 
 This project is open-source. Feel free to use and modify.
