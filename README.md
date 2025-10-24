@@ -44,6 +44,12 @@ Install dependencies with: `pip install -r requirements.txt`
 
 4. The trained model will be saved as `anim_model.pth`.
 
+5. For inference on new images, use the inference script:
+   ```
+   python inference.py
+   ```
+   Enter the path to an image when prompted, and the script will output the predicted class.
+
 ## Model Architecture
 
 The CNN consists of:
