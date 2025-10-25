@@ -76,11 +76,28 @@ After training, the notebook generates plots for:
 
 ### Confusion Matrix
 
-*Confusion matrix will be available after model training and evaluation.*
+![Confusion Matrix](confusion_matrix.png)
+
+```
+Confusion Matrix:
+[[392  39 400]
+ [  0   0 797]
+ [  0   0 792]]
+```
 
 ### Classification Report
 
-*Classification report will be available after model training and evaluation.*
+```
+              precision    recall  f1-score   support
+
+         cat       0.36      0.47      0.41       831
+         dog       0.00      0.00      0.00       797
+        wild       0.37      0.62      0.46       792
+
+    accuracy                           0.36      2420
+   macro avg       0.24      0.36      0.29      2420
+weighted avg       0.24      0.36      0.29      2420
+```
 
 **Note:** If validation accuracy appears >100% in the output, this is due to a calculation bug where percentages are applied twice. To fix, remove the `* 100` from the validation accuracy calculation in the training loop (change `total_acc_val / len(val_df) * 100` to `total_acc_val / len(val_df)`).
 
