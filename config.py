@@ -1,4 +1,5 @@
 # Configuration file for Animal MultiClass Classification
+import torch
 
 # Hyperparameters
 LR = 1e-4

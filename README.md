@@ -74,6 +74,14 @@ After training, the notebook generates plots for:
 - Training and validation loss over epochs
 - Training and validation accuracy over epochs
 
+### Confusion Matrix
+
+*Confusion matrix will be available after model training and evaluation.*
+
+### Classification Report
+
+*Classification report will be available after model training and evaluation.*
+
 **Note:** If validation accuracy appears >100% in the output, this is due to a calculation bug where percentages are applied twice. To fix, remove the `* 100` from the validation accuracy calculation in the training loop (change `total_acc_val / len(val_df) * 100` to `total_acc_val / len(val_df)`).
 
 ## License
